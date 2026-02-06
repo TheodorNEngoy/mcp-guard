@@ -1,6 +1,6 @@
 {
   "name": "mcp-guard",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Language-agnostic reverse proxy that adds secure defaults (CORS allowlist, body size limits) in front of any MCP HTTP endpoint",
   "license": "MIT",
   "type": "module",
@@ -22,4 +22,3 @@
     "zod": "^4.2.1"
   }
 }
-

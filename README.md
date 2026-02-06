@@ -36,6 +36,13 @@ Environment variables:
 ## Docker
 
 ```bash
+# Pull prebuilt image
+docker run --rm -p 8787:8787 \\
+  -e UPSTREAM_URL="http://host.docker.internal:8788/mcp" \\
+  -e ALLOWED_ORIGINS="https://chatgpt.com,https://chat.openai.com" \\
+  ghcr.io/theodornengoy/mcp-guard:v0
+
+# Or build locally
 docker build -t mcp-guard .
 docker run --rm -p 8787:8787 \\
   -e UPSTREAM_URL="http://host.docker.internal:8788/mcp" \\
@@ -46,4 +53,3 @@ docker run --rm -p 8787:8787 \\
 ## Why This Matters
 
 The most common high-severity bug in tool servers is permissive CORS. `mcp-guard` lets you reduce exposure without rewriting your upstream server.
-
