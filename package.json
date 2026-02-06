@@ -1,0 +1,25 @@
+{
+  "name": "mcp-guard",
+  "version": "0.1.0",
+  "description": "Language-agnostic reverse proxy that adds secure defaults (CORS allowlist, body size limits) in front of any MCP HTTP endpoint",
+  "license": "MIT",
+  "type": "module",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/TheodorNEngoy/mcp-guard"
+  },
+  "bin": {
+    "mcp-guard": "./src/cli.js"
+  },
+  "scripts": {
+    "start": "node ./src/cli.js",
+    "test": "node --test"
+  },
+  "engines": {
+    "node": ">=20"
+  },
+  "dependencies": {
+    "zod": "^4.2.1"
+  }
+}
+
